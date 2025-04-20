@@ -1,4 +1,4 @@
-// larest no in array
+//largest no in array
 #include<iostream>
 using namespace std;
 int main(){
