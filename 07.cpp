@@ -2,11 +2,11 @@
 using namespace std;
 
 int binaryToDecimal(int binary) {
-    int decimal = 0, base = 1;
+    int dec = 0, base = 1;
 
     while (binary > 0) {
         int lastDigit = binary % 10;
-        decimal += lastDigit * base;
+        dec += lastDigit * base;
         base *= 2;
         binary /= 10;
     }
@@ -19,5 +19,5 @@ int main() {
     cout << "Enter a binary number: ";
     cin >> binary;
 
-    int decimal = binaryToDecimal(binary);
-    cout << "Decimal equivalent: " << decimal
+    int dec = binaryToDecimal(binary);
+    cout << "Decimal equivalent: " << dec
