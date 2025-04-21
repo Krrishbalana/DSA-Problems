@@ -1,23 +1,23 @@
-#include <iostream>
+// convert binary number to Decimal number system
+#include<iostream>
 using namespace std;
+//define function to convert binary number to decimal number
+int decimalNum(int binNum){
+    int pow = 1; // 2^0 = 1
+    int ans = 0;
+    while (binNum > 0)
+    {
+        int rem = binNum % 10;
+        ans += (rem * pow);
 
-int binaryToDecimal(int binary) {
-    int decimal = 0, base = 1;
+        binNum = binNum / 10;
+        pow *= 2;
 
-    while (binary > 0) {
-        int lastDigit = binary % 10;
-        decimal += lastDigit * base;
-        base *= 2;
-        binary /= 10;
     }
-
-    return decimal;
+    return ans;
 }
 
-int main() {
-    int binary;
-    cout << "Enter a binary number: ";
-    cin >> binary;
-
-    int decimal = binaryToDecimal(binary);
-    cout << "Decimal equivalent: " << decimal
+int main(){
+    int binNum = 110101;
+    cout << decimalNum(binNum) << endl;
+}
