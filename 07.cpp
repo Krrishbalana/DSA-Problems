@@ -1,7 +1,8 @@
 // convert binary number to Decimal number system
+
 #include<iostream>
 using namespace std;
-//define function to convert binary number to decimal number
+//define a function to convert a binary number to a decimal number
 int decimalNum(int binNum){
     int pow = 1; // 2^0 = 1
     int ans = 0;
