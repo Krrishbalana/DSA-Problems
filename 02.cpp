@@ -1,4 +1,5 @@
 // Smallest no in array
+
 #include<iostream>
 using namespace std;
 
