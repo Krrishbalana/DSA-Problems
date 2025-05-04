@@ -1,4 +1,5 @@
 // convert binary number to Decimal number system
+
 #include<iostream>
 using namespace std;
 //define a function to convert a binary number to a decimal number
